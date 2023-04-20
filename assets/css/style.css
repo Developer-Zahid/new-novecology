@@ -18,45 +18,6 @@ Table of Content
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* Bootstrap Icons Link */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
-/* Typography Reset */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: "Poppins", sans-serif;
-}
-
-h1, .h1 {
-  font-size: 2.25rem;
-}
-
-h2, .h2 {
-  font-size: 1.875rem;
-}
-
-h3, .h3 {
-  font-size: 1.5rem;
-}
-
-h4, .h4 {
-  font-size: 1.125rem;
-}
-
-h5, .h5 {
-  font-size: 0.75rem;
-}
-
-p {
-  font-size: 1rem;
-}
-@media (max-width: 991.98px) {
-  p {
-    font-size: 0.875rem;
-  }
-}
-
 /* Reset CSS */
 *,
 *::before,
@@ -244,6 +205,45 @@ img {
   }
 }
 
+/* Typography Reset */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 2.25rem;
+}
+
+h2, .h2 {
+  font-size: 1.875rem;
+}
+
+h3, .h3 {
+  font-size: 1.5rem;
+}
+
+h4, .h4 {
+  font-size: 1.125rem;
+}
+
+h5, .h5 {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+}
+@media (max-width: 991.98px) {
+  p {
+    font-size: 0.875rem;
+  }
+}
+
 /* Common Transition Style */
 .footer__copyright__link, .header .navbar-toggler, .slick__arrows, .slick-dots li button {
   -webkit-transition: all linear 0.3s;
@@ -280,6 +280,51 @@ img {
   font-size: 1.1rem;
   color: #ffffff;
   background-color: #13438c;
+}
+
+.form-control {
+  color: #13438c;
+  font-size: 0.875rem;
+}
+.form-control::-webkit-input-placeholder {
+  color: currentColor;
+}
+.form-control:-moz-placeholder {
+  color: currentColor;
+}
+.form-control::-moz-placeholder {
+  color: currentColor;
+}
+.form-control:-ms-input-placeholder {
+  color: currentColor;
+}
+.form-control::-ms-input-placeholder {
+  color: currentColor;
+}
+.form-control::placeholder {
+  color: currentColor;
+}
+.form-control:focus {
+  color: #13438c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
+}
+
+select {
+  cursor: pointer;
 }
 
 /* Header Section Style */
@@ -395,6 +440,9 @@ img {
   text-decoration: underline;
 }
 
+.banner {
+  position: relative;
+}
 @media (max-width: 991.98px) {
   .banner .slick__arrows {
     bottom: 0;
@@ -442,6 +490,11 @@ img {
 }
 @media (min-width: 992px) {
   .banner__slide__card {
+    height: 31.25rem;
+  }
+}
+@media (min-width: 1400px) {
+  .banner__slide__card {
     height: 38.125rem;
   }
 }
@@ -474,4 +527,33 @@ img {
   padding: 8px 1.5625rem;
   border-radius: 8px;
   margin-bottom: 2.8125rem;
+}
+@media (min-width: 1200px) {
+  .banner__bottom {
+    position: absolute;
+    bottom: 0;
+    padding-left: 2.1875rem;
+    padding-right: 2.1875rem;
+  }
+}
+
+.schedule-form {
+  background-color: #13438c;
+  padding: 1.25rem 0.625rem;
+}
+@media (min-width: 1200px) {
+  .schedule-form {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .schedule-form {
+    padding: 1.25rem 1.875rem;
+  }
+}
+.schedule-form__title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

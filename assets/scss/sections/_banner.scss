@@ -1,4 +1,5 @@
 .banner{
+    position: relative;
     .slick{
         &__arrows{
             @include max-md{
@@ -34,6 +35,9 @@
         justify-content: center;
         height: toRem(450);
         @include min-lg{
+            height: toRem(500);
+        }
+        @include min-xxl{
             height: toRem(610);
         }
 
@@ -65,5 +69,32 @@
                 margin-bottom: toRem(45);
             }
         }
+    }
+
+    &__bottom{
+        @include min-xl{
+            position: absolute;
+            bottom: 0;
+            padding-left: toRem(35);
+            padding-right: toRem(35);
+        }
+    }
+}
+
+.schedule-form{
+    background-color: $color-primary;
+    @include min-xl{
+        border-top-left-radius: toRem(20);
+        border-top-right-radius: toRem(20);
+    }
+    padding: toRem(20) toRem(10);
+    @include min-lg{
+        padding: toRem(20) toRem(30);
+    }
+
+    &__title{
+        color: $color-white;
+        font-size: toRem(18);
+        font-weight: 400;
     }
 }
