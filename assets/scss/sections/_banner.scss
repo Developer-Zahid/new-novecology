@@ -77,11 +77,27 @@
             bottom: 0;
             padding-left: toRem(35);
             padding-right: toRem(35);
+            pointer-events: none;
+        }
+
+        &__image{
+            pointer-events: none;
+            user-select: none;
+            max-height: toRem(200);
+            margin-left: auto;
+            transform: translateY(toRem(40));
+
+            @include max-lg{
+                display: none;
+            }
         }
     }
 }
 
 .schedule-form{
+    @include min-xl{
+        pointer-events: all;
+    }
     background-color: $color-primary;
     @include min-xl{
         border-top-left-radius: toRem(20);

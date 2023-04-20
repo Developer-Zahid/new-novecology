@@ -534,12 +534,37 @@ select {
     bottom: 0;
     padding-left: 2.1875rem;
     padding-right: 2.1875rem;
+    pointer-events: none;
+  }
+}
+.banner__bottom__image {
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  max-height: 12.5rem;
+  margin-left: auto;
+  -webkit-transform: translateY(2.5rem);
+     -moz-transform: translateY(2.5rem);
+      -ms-transform: translateY(2.5rem);
+       -o-transform: translateY(2.5rem);
+          transform: translateY(2.5rem);
+}
+@media (max-width: 1199.98px) {
+  .banner__bottom__image {
+    display: none;
   }
 }
 
 .schedule-form {
   background-color: #13438c;
   padding: 1.25rem 0.625rem;
+}
+@media (min-width: 1200px) {
+  .schedule-form {
+    pointer-events: all;
+  }
 }
 @media (min-width: 1200px) {
   .schedule-form {
