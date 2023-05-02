@@ -17,8 +17,6 @@ Table of Content
 
 /* Google Fonts Link */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-/* Bootstrap Icons Link */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
 
 @import "./abstracts/variable";
 @import "./abstracts/mixin";
@@ -28,6 +26,9 @@ Table of Content
 @import "./abstracts/extend";
 @import "./components/buttons";
 @import "./components/form";
+@import "./components/tablist";
 @import "./layout/header";
 @import "./layout/footer";
 @import "./sections/banner";
+@import "./sections/feature";
+@import "./sections/service";

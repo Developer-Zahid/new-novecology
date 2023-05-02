@@ -17,9 +17,10 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
 	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
 	<!-- All CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/plugins/slick-slider/css/slick.min.css">
-	<link rel="stylesheet" href="./assets/css/style.css">
+	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
 	<!-- Header Section -->
@@ -37,13 +38,13 @@
 							</a>
 							<ul class="dropdown-menu">
 								<li>
-									<a class="dropdown-item" href="#">Notre histoire</a>
+									<a class="dropdown-item" href="#!">Notre histoire</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#">Nos valeurs</a>
+									<a class="dropdown-item" href="#!">Nos valeurs</a>
 								</li>
 								<li>
-									<a class="dropdown-item" href="#">Nos références</a>
+									<a class="dropdown-item" href="#!">Nos références</a>
 								</li>
 							</ul>
 						</li>
@@ -56,18 +57,18 @@
 					</ul>
 					<ul class="nav header__top__social-nav">
 						<li class="nav-item">
-							  <a class="nav-link" href="#">
-								<i class="bi bi-facebook"></i>
+							  <a class="nav-link" href="#!">
+								<i class="fa-brands fa-facebook-f"></i>
 							</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">
-								<i class="bi bi-instagram"></i>
+							  <a class="nav-link" href="#!">
+								<i class="fa-brands fa-instagram"></i>
 							</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">
-								<i class="bi bi-youtube"></i>
+							  <a class="nav-link" href="#!">
+								<i class="fa-brands fa-youtube"></i>
 							</a>
 						</li>
 					</ul>
@@ -76,28 +77,28 @@
 		</div>
 		<div class="container-fluid">
 			<nav class="navbar navbar-expand-xl">
-				<a class="navbar-brand" href="./index.html">
+				<a class="navbar-brand" href="/">
 					<img src="./assets/images/logo/logo.png" alt="logo" class="navbar-brand__image">
 				</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas">
-					<span class="navbar-toggler-icon"></span>
+					<i class="fa-solid fa-bars"></i>
 				</button>
 				<div class="offcanvas offcanvas-end align-self-stretch" tabindex="-1" id="navbarOffcanvas">
 					<ul class="navbar-nav ms-xl-auto">
 						<li class="nav-item">
-							  <a class="nav-link" aria-current="page" href="#">Nos offres</a>
+							  <a class="nav-link" aria-current="page" href="#!">Nos offres</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">Témoignages clients</a>
+							  <a class="nav-link" href="#!">Témoignages clients</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">Nos Conseils</a>
+							  <a class="nav-link" href="#!">Nos Conseils</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">Audit énergétique</a>
+							  <a class="nav-link" href="#!">Audit énergétique</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="#">Estimer vos aides</a>
+							  <a class="nav-link" href="#!">Estimer vos aides</a>
 						</li>
 					</ul>
 				</div>
@@ -258,13 +259,108 @@
 		</div>
 	</section>
 
+	<!-- Feature Section -->
+	<section class="feature">
+		<div class="container container-lg-fluid">
+			<div class="row">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature__card">
+						<div class="feature__card__icon rounded-circle">
+							<i class="fa-solid fa-angle-up"></i>
+						</div>
+						<p class="feature__card__text mb-0">8 ans d'expertise et d'expérience au service des particuliers</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature__card">
+						<div class="feature__card__icon rounded-circle">
+							<i class="fa-solid fa-map-location-dot"></i>
+						</div>
+						<p class="feature__card__text mb-0">Notre entreprise RGE intervient dans toute la France</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature__card">
+						<div class="feature__card__icon rounded-circle">
+							<i class="fa-solid fa-clock-rotate-left"></i>
+						</div>
+						<p class="feature__card__text mb-0">Une présence sur toute la France au travers de nos sites logistiques pour assurer une relation de proximité</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature__card">
+						<div class="feature__card__icon rounded-circle">
+							<i class="fa-solid fa-thumbs-up"></i>
+						</div>
+						<p class="feature__card__text mb-0">91% de nos clients nous parviennent sur recommandation</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="service section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 section-header">
+					<h1 class="section-header__title">Vous voulez faire des économies d'énergie ?</h1>
+					<p class="section-header__text">Nos offres pour PARTICULIER pour répondre à votre besoins</p>
+				</div>
+				<div class="col-12 d-flex justify-content-center">
+					<div class="tablist-scroller overflow-auto p-3">
+						<ul class="tablist--service nav nav-pills justify-content-center mb-0" id="pills-tab" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button type="button" class="nav-link active" data-bs-toggle="pill" data-bs-target="#service-category-1"  role="tab" aria-selected="true">
+									<span class="nav-link__icon">
+										<img src="./assets/images/services/service-icon-1.svg" alt="service-icon">
+									</span>
+									<span class="nav-link__text">Changer mon chauffage</span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#service-category-2" role="tab" aria-selected="false">
+									<span class="nav-link__icon">
+										<img src="./assets/images/services/service-icon-2.svg" alt="service-icon">
+									</span>
+									<span class="nav-link__text">Isoler ma maison</span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#service-category-3" role="tab" aria-selected="false">
+									<span class="nav-link__icon">
+										<img src="./assets/images/services/service-icon-3.svg" alt="service-icon">
+									</span>
+									<span class="nav-link__text">Passer au solaire</span>
+								</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button type="button" class="nav-link" data-bs-toggle="pill" data-bs-target="#service-category-4" role="tab" aria-selected="false">
+									<span class="nav-link__icon">
+										<img src="./assets/images/services/service-icon-4.svg" alt="service-icon">
+									</span>
+									<span class="nav-link__text">Rénovation Globale</span>
+								</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="tab-content" id="pills-tabContent">
+				<div class="tab-pane fade show active" id="service-category-1" role="tabpanel">1</div>
+				<div class="tab-pane fade" id="service-category-2" role="tabpanel">2</div>
+				<div class="tab-pane fade" id="service-category-3" role="tabpanel">3</div>
+				<div class="tab-pane fade" id="service-category-4" role="tabpanel">4</div>
+			</div>
+		</div>
+	</section>
+
 	<h1 class="min-vh-100 text-uppercase font-weight-bold d-flex align-items-center justify-content-center mb-0">Hello World</h1>
 	<h1 class="min-vh-100 text-uppercase font-weight-bold d-flex align-items-center justify-content-center mb-0">Hello World</h1>
 
 	<!-- Scroll To Top Button -->
 	<div class="scroll-top position-fixed">
 		<button class="scroll-top__btn border-0 d-inline-flex align-items-center justify-content-center">
-			<i class="bi bi-chevron-up"></i>
+			<i class="fa-solid fa-chevron-up"></i>
 		</button>
 	</div>
 

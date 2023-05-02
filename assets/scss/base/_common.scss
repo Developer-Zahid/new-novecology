@@ -75,6 +75,20 @@ img{
 	object-fit: cover;
 }
 
+@include min-lg {
+	.container-lg-fluid{
+		--bs-gutter-x:1.5rem;
+		--bs-gutter-y:0;
+		width:100%;
+		padding-right:calc(var(--bs-gutter-x) * .5);
+		padding-left:calc(var(--bs-gutter-x) * .5);
+		margin-right:auto;
+		margin-left:auto;
+		max-width: unset
+	}
+}
+
+
 .user-select-none{
 	pointer-events: none;
 }
@@ -145,21 +159,23 @@ img{
 
 /* Common Section Gap Style */
 .section-gap{
-	padding: 6rem 0;
+	padding: toRem(60) 0;
 	@include max-lg{
-		padding: 3rem 0;
+		padding: toRem(50) 0;
 	}
 
 	&--fix{
-		padding-bottom: calc(6rem - 30px);
+		padding-bottom: calc(toRem(60) - 30px);
 		@include max-lg{
-			padding-bottom: calc(3rem - 30px);
+			padding-bottom: calc(toRem(50) - 30px);
 		}
 	}
 }
 
 /* Common Section Heading Style */
 .section-header{
+	color: $color-primary;
+	text-align: center;
 	margin-bottom: toRem(50);
 	@include max-md{
 		margin-bottom: toRem(30);
@@ -167,12 +183,13 @@ img{
 
 	&__title{
 		font-size: toRem(40);
-		font-family: unset;
 		@include min-lg{
 			font-size: toRem(30);
 		}
 		@include max-md{
 			font-size: toRem(26);
 		}
+		font-weight: 700;
+		margin-bottom: toRem(20);
 	}
 }
