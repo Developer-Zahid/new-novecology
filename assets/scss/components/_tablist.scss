@@ -111,6 +111,10 @@
                 &::before{
                     opacity: 1;
                 }
+
+                .nav-link__icon__image{
+                    filter: grayscale(1);
+                }
             }
     
             &__icon{

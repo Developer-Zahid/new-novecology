@@ -14,6 +14,28 @@
 	--bs-btn-active-border-color: #{$color-gradient-primary};
 }
 
+.btn-gradient{
+	color: $color-white !important;
+	display: inline-block;
+	font-size: toRem(14);
+	font-weight: 500;
+	padding: toRem(10) toRem(24);
+	letter-spacing: .35px;
+	background-image: linear-gradient(90deg, $color-gradient-primary, $color-gradient-secondary);
+	text-align: center;
+	@extend %transition;
+
+	&:hover,
+	&:focus-visible
+	{
+		box-shadow: 0 toEm(10) toEm(12) rgba($color-black, $alpha: 0.2);
+	}
+
+	&:focus-visible{
+		background-image: linear-gradient(90deg, $color-primary, $color-gradient-secondary);
+	}
+}
+
 .scroll-top{
 	bottom: toRem(15);
 	right: toRem(15);

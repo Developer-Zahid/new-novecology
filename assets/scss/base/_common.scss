@@ -43,6 +43,7 @@ a:hover,
 a:focus,
 a:active
 {
+	color: currentColor;
 	text-decoration: none;
 }
 
@@ -59,12 +60,6 @@ input:-webkit-autofill{
 	transition: background-color 5000s;
 }
 
-ul,
-ol
-{
-	list-style: none;
-}
-
 img,
 svg
 {
@@ -73,6 +68,7 @@ svg
 
 img{
 	object-fit: cover;
+	max-width: 100%;
 }
 
 @include min-lg {
@@ -189,4 +185,13 @@ img{
 		font-weight: 700;
 		margin-bottom: toRem(20);
 	}
+}
+
+.match-height > [class*="col"]{
+	display: flex;
+	flex-flow: column;
+}
+
+.match-height > [class*="col"] > *{
+	flex: 1 1 auto;
 }
