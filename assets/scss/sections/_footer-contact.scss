@@ -1,0 +1,25 @@
+.footer-contact{
+    .schedule-form{
+        border-radius: 10px;
+    }
+
+    &__shape{
+        isolation: isolate;
+        
+        &__image{
+            z-index: -1;
+            @include max-md{
+                margin-left: auto;
+                max-height: toRem(200);
+                margin-bottom: -20%;
+            }
+
+            @include min-lg{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+            
+        }
+    }
+}

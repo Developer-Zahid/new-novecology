@@ -58,8 +58,8 @@
 	z-index: 7;
 
 	&__btn{
-		width: 2.8rem;
-		height: 2.8rem;
+		width: toRem(30);
+		height: toRem(30);
 		font-size: 1.1rem;
 		color: $color-white;
 		background-color: $color-primary;

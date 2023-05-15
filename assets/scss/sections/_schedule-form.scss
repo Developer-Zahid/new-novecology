@@ -1,0 +1,29 @@
+.schedule-form{
+    @include min-xl{
+        pointer-events: all;
+    }
+    background-color: $color-primary;
+    @include min-xl{
+        border-top-left-radius: toRem(20);
+        border-top-right-radius: toRem(20);
+    }
+    padding: toRem(20) toRem(10);
+    @include min-lg{
+        padding: toRem(20) toRem(30);
+    }
+
+    &__title{
+        color: $color-white;
+        font-size: toRem(18);
+        font-weight: 400;
+
+        &--lg{
+            font-size: 170%;
+        }
+    }
+
+    .btn-primary{
+        --bs-btn-hover-bg: #{$color-btn-hover};
+        --bs-btn-hover-border-color: #{$color-btn-hover};
+    }
+}

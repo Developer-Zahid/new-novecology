@@ -175,3 +175,38 @@ img{
 .match-height > [class*="col"] > *{
 	flex: 1 1 auto;
 }
+
+.wavy__figure{
+	$size: 15%;
+	position: relative;
+	margin-top: calc(($size / 2) * -1);
+	padding-top: $size;
+	margin-bottom: 0;
+
+	+ *{
+		background-color: $color-section;
+	}
+
+	&__shape{
+		color: $color-section;
+		@extend %full-width;
+	}
+}
+
+.link-highlight{
+	display: inline-block;
+	color: lighten($color-black, $amount: 10) !important;
+	background-color: $color-white;
+	border: 2px solid $color-gradient-primary;
+	padding: 2px 5px;
+	border-radius: 5px;
+	font-size: 75%;
+}
+
+.strong{
+	font-weight: 600;
+}
+
+.text-primary{
+	--bs-primary-rgb: #{$color-primary-rgb};
+}
