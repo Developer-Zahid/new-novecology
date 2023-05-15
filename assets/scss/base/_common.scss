@@ -101,28 +101,8 @@ img{
 	&__arrows{
 		position: absolute;
 		z-index: 3;
-		width: toRem(45);
-		height: toRem(45);
-		color: $color-white;
-		background-color: rgba($color-black, $alpha: 0.4);
-		font-size: toRem(20);
-		text-align: center;
 		cursor: pointer;
 		@extend %transition;
-
-		&--left{
-			left: 0;
-		}
-		&--right{
-			right: 0;
-		}
-
-		&:hover,
-		&:focus-visible
-		{
-			color: $color-white;
-			background-color: rgba($color-black, $alpha: 0.6);
-		}
 	}
 
 	&-dots{

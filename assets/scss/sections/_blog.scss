@@ -1,0 +1,67 @@
+.blog{
+    .slick{
+        &__arrows{
+            bottom: calc((toRem(40) + 10px) * -1);
+            color: $color-primary;
+            background-color: $color-white;
+            width: toRem(40);
+            height: toRem(40);
+            font-size: toRem(16);
+            text-align: center;
+            border-radius: 50%;
+            box-shadow: 0 5px 20px rgba($color-black, $alpha: 0.15);
+
+            &--left{
+                right: calc((toRem(40) + 25px));
+            }
+            &--right{
+                right: 15px;
+                transform: translateX(0);
+            }
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-white;
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &__card{
+        position: relative;
+        margin-top: toRem(10);
+        margin-bottom: toRem(10);
+        border-radius: toRem(15);
+        @extend %transition;
+
+        @include min-lg{
+            &:hover,
+            &:focus-within
+            {
+                transform: translateY(-2%);
+                box-shadow: 0 10px 10px rgba($color-black, $alpha: 0.2);
+            }
+        }
+
+        &__body{
+            padding: toRem(90) toRem(15);
+        }
+
+        &__text{
+            font-size: toRem(15);
+        }
+
+        &__figure{
+            position: relative;
+            padding-top: toRem(140);
+
+            &__image{
+                object-position: left;
+                border-bottom-left-radius: toRem(15);
+                border-bottom-right-radius: toRem(15);
+                @extend %full-width;
+            }
+        }
+    }
+}

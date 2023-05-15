@@ -7,7 +7,6 @@
         overflow: hidden;
         color: $color-primary;
         box-shadow: 0 4px 20px #0000001a;
-
         @include min-lg{
             display: flex;
         }

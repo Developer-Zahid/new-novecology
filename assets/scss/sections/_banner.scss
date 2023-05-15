@@ -1,13 +1,35 @@
 .banner{
     position: relative;
+
     .slick{
         &__arrows{
+            width: toRem(45);
+            height: toRem(45);
+            color: $color-white;
+            background-color: rgba($color-black, $alpha: 0.4);
+            font-size: toRem(20);
+            text-align: center;
+
             @include max-md{
                 bottom: 0;
             }
             @include min-lg{
                 top: 40%;
                 opacity: 0;
+            }
+
+            &--left{
+                left: 0;
+            }
+            &--right{
+                right: 0;
+            }
+
+            &:hover,
+            &:focus-visible
+            {
+                color: $color-white;
+                background-color: rgba($color-black, $alpha: 0.6);
             }
         }
 

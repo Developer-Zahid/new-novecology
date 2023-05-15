@@ -32,24 +32,6 @@
     	$('.header-height-fix').css('height', $('header').innerHeight() +'px');
 	};
 
-    /*  Banner slider */
-    $(".banner__slider").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-		fade: true,
-		cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 8000,
-        speed: 600,
-        arrows: true,
-        prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-left"></i></button>',
-		nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-right"></i></button>',
-        dots: false,
-        pauseOnHover: false,
-        pauseOnFocus: false,
-        infinite: true
-    });
-
 
     /*  common slider */
     // $(".common__slider").slick({
