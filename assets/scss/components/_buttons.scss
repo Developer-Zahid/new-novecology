@@ -14,16 +14,23 @@
 	--bs-btn-active-border-color: #{$color-gradient-primary};
 }
 
+.btn-gradient,
+.btn-text,
+.btn-fat
+{
+	display: inline-block;
+	text-align: center;
+	@extend %transition;
+}
+
 .btn-gradient{
 	color: $color-white !important;
-	display: inline-block;
 	font-size: toRem(14);
 	font-weight: 500;
 	padding: toRem(10) toRem(24);
 	letter-spacing: .35px;
 	background-image: linear-gradient(90deg, $color-gradient-primary, $color-gradient-secondary);
 	text-align: center;
-	@extend %transition;
 
 	&:hover,
 	&:focus-visible
@@ -37,7 +44,6 @@
 }
 
 .btn-text{
-	display: inline-block;
 	color: $color-primary;
 	padding: 5px;
 	font-weight: 500;
@@ -48,6 +54,61 @@
 		color: $color-primary;
 		text-decoration: underline;
 	}
+}
+
+.btn-fat{
+	padding: toRem(10) toRem(30);
+	border-radius: 8px;
+	font-weight: 500;
+
+	&--light{
+		color: $color-black;
+		background-color: $color-white;
+
+		&:hover,
+		&:focus
+		{
+			color: $color-black;
+			background-color: $color-white;
+		}
+	}
+
+	&--warning{
+		color: $color-white;
+		background-color: $color-start;
+
+		&:hover,
+		&:focus
+		{
+			color: $color-white;
+			background-color: $color-start;
+		}
+	}
+
+	&--primary{
+		color: $color-white;
+		background-color: $color-primary;
+
+		&:hover,
+		&:focus
+		{
+			color: $color-white;
+			background-color: $color-primary;
+		}
+	}
+}
+
+.btn-bear{
+	position: relative;
+
+	&__image{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		max-height: toRem(64);
+		transform: translateX(40%);
+	}
+
 }
 
 .scroll-top{
