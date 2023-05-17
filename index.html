@@ -590,6 +590,72 @@
 		</div>
 	</section>
 
+	<!-- Step Section -->
+	<section class="step section-gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-6 section-header">
+					<h1 class="section-header__title">Votre projet de rénovation énergétique clé en main</h1>
+					<p class="section-header__text">Nous vous offrons un accompagnement à chaque étape de votre projet, pour des travaux de rénovation énergétique en toute sérenité.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8">
+					<div class="step__video-slider">
+						<div class="step__video-slide">
+							<div class="step__video__card">
+								<img src="./assets/images/services/service-1/service-image-1.jpg" alt="step preview">
+							</div>
+						</div>
+						<div class="step__video-slide">
+							<div class="step__video__card">
+								<img src="./assets/images/services/service-1/service-image-2.jpg" alt="step preview">
+							</div>
+						</div>
+						<div class="step__video-slide">
+							<div class="step__video__card">
+								<img src="./assets/images/services/service-1/service-image-3.jpg" alt="step preview">
+							</div>
+						</div>
+						<div class="step__video-slide">
+							<div class="step__video__card">
+								<img src="./assets/images/services/service-1/service-image-4.jpg" alt="step preview">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="step__content-slider">
+						<div class="step__content-slide active" data-slide-index="0">
+							<div class="step__content__card">
+								1 hello
+								<div>fwwefger</div>
+							</div>
+						</div>
+						<div class="step__content-slide" data-slide-index="1">
+							<div class="step__content__card">
+								2 hello
+								<div>fwwefger</div>
+							</div>
+						</div>
+						<div class="step__content-slide" data-slide-index="2">
+							<div class="step__content__card">
+								3 hello
+								<div>fwwefger</div>
+							</div>
+						</div>
+						<div class="step__content-slide" data-slide-index="3">
+							<div class="step__content__card">
+								4 hello
+								<div>fwwefger</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<!-- Testimonial Section -->
 	<section class="testimonial section-gap">
 		<div class="container">
@@ -1350,6 +1416,36 @@
 				$(this).closest('[data-toggle="thumbnail"]').html(`<iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/${$(this).closest('[data-toggle="thumbnail"]').attr("data-embed-id")}?autoplay=1&enablejsapi=1&controls=1&autopause=0&muted=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" loading="lazy"></iframe>`)
 			});
 		});
+	</script>
+
+	<script>
+		(function(){
+			const $stepContentSlide = $('.step__content-slide');
+			const $stepContentSlideArray = Array.from($stepContentSlide);
+			const $stepVideoSlide = $('.step__video-slider');
+
+			$stepVideoSlide.slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				speed: 400,
+				arrows: false,
+				dots: true,
+				pauseOnHover: false,
+				pauseOnFocus: false,
+				infinite: false,
+			});
+
+			$stepVideoSlide.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide) {
+				$stepContentSlide.removeClass('active');
+				$($stepContentSlideArray[slick.currentSlide]).addClass('active');
+			});
+
+			$stepContentSlide.each(function(){
+				$(this).mouseenter(function() {
+					$stepVideoSlide.slick('slickGoTo', $(this).data('slide-index'));
+				});
+			})
+		})();
 	</script>
 </body>
 </html>

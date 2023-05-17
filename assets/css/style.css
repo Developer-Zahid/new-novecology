@@ -1376,4 +1376,8 @@ select {
 }
 .review__card .play-icon {
   font-size: 3.75rem;
+}
+
+.step__content-slide.active {
+  background-color: red;
 }/*# sourceMappingURL=style.css.map */
