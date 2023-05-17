@@ -1441,7 +1441,8 @@
 			});
 
 			$stepContentSlide.each(function(){
-				$(this).mouseenter(function() {
+				$(this).mouseenter(function(e) {
+					e.preventDefault();
 					$stepVideoSlide.slick('slickGoTo', $(this).data('slide-index'));
 				});
 			})
