@@ -135,23 +135,26 @@ img {
      -moz-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 0;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
   line-height: 0;
+  list-style-type: none;
 }
 .slick-dots li:not(:last-child) {
-  margin-right: 1rem;
+  margin-right: 10px;
 }
 .slick-dots li button {
   font-size: 0;
-  width: 0.5rem;
-  height: 0.5rem;
-  background: #13438c;
-  border: 1px solid #13438c;
-  border-radius: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 1rem;
+  border: 0;
+  background-color: #ebecef;
+  -webkit-box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25), inset 0 10px 14px hsla(0deg, 0%, 100%, 0.31);
+          box-shadow: 0 1px 7px rgba(0, 0, 0, 0.25), inset 0 10px 14px hsla(0deg, 0%, 100%, 0.31);
 }
 .slick-dots li.slick-active button {
-  width: 1rem;
-  background: transparent;
+  background-color: #13438c;
 }
 
 /* Common Section Gap Style */
@@ -1367,4 +1370,10 @@ select {
 
 .review__title {
   font-size: 1.75rem;
+}
+.review__card {
+  background-color: #13438c;
+}
+.review__card .play-icon {
+  font-size: 3.75rem;
 }/*# sourceMappingURL=style.css.map */

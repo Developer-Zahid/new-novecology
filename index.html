@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Site Meta Data -->
-    <meta name="author" content="Developer Zahid | Zahid Hasan Munna">
-    <meta name="description" content="My name is Zahid Hasan Munna. I'm a Front-End Developer. I created these...">
-    <meta name="keywords" content="frontend developer, frontend designer, web designer, developer, designer, dev-z">
+    <meta name="author" content="Novecology">
+    <meta name="description" content="Novecology website">
+    <meta name="keywords" content="Novecology, novecology">
 	<!-- Site Title -->
 	<title>New Novecology</title>
 	<!-- Favicon Link -->
@@ -878,25 +878,25 @@
 	<!-- Review Section -->
 	<section class="review section-gap">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-7 text-center">
+			<div class="row justify-content-center align-items-center flex-lg-row-reverse">
+				<div class="col-lg-5">
+					<div class="review__slider">
+						<div class="review__slide">
+							<div class="review__card ratio ratio-4x3 rounded" data-toggle="thumbnail" data-embed-id="pNfgyV3jRiY"></div>
+						</div>
+						<div class="review__slide">
+							<div class="review__card ratio ratio-4x3 rounded" data-toggle="thumbnail" data-embed-id="cm7BjtGDzWg"></div>
+						</div>
+						<div class="review__slide">
+							<div class="review__card ratio ratio-4x3 rounded" data-toggle="thumbnail" data-embed-id="xRNTW3eem48"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-5 text-center">
 					<div class="section-header">
 						<h1 class="section-header__title">NOS CLIENTS PARTAGENT LEURS EXPÉRIENCES</h1>
 					</div>
 					<a href="#!" class="btn-fat btn-fat--primary">Les <br> Témoignages</a>
-				</div>
-				<div class="col-lg-5">
-					<div class="review__slider">
-						<div class="review__slide">
-							<div class="review__card ratio ratio-16x9" data-toggle="thumbnail" data-embed-id="cm7BjtGDzWg"></div>
-						</div>
-						<div class="review__slide">
-							<div class="review__card ratio ratio-16x9" data-toggle="thumbnail" data-embed-id="pNfgyV3jRiY"></div>
-						</div>
-						<div class="review__slide">
-							<div class="review__card ratio ratio-16x9" data-toggle="thumbnail" data-embed-id="xRNTW3eem48"></div>
-						</div>
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1197,7 +1197,7 @@
 					<div class="footer__btn-group">
 						<a href="#!" class="btn-fat btn-fat--light btn-bear">
 							Prendre <br> rendez-vous
-							<img src="./assets/images/icon/bear-image.png" alt="bear" height="64" class="btn-bear__image">
+							<img src="./assets/images/icon/bear-image.png" alt="bear" height="64" class="btn-bear__image user-select-none">
 						</a>
 						<a href="#!" class="btn-fat btn-fat--warning">Estimez le montant de <br> vos aides</a>
 					</div>
@@ -1316,6 +1316,22 @@
 				});
 			};
 
+			/*  Blog slider */
+			if($(".review__slider").length){
+				$(".review__slider").slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					speed: 400,
+					fade: true,
+					cssEase: 'linear',
+					arrows: false,
+					dots: true,
+					pauseOnHover: false,
+					pauseOnFocus: false,
+					infinite: false,
+				});
+			};
+
 			/* Load iframe after click function start */
 			$('[data-toggle="thumbnail"]').each(function(){
 				$(this).append(`
@@ -1331,7 +1347,7 @@
 
 			/* Load iframe after click function end */
 			$(document).on("click", '[data-toggle="iframe"]', function(){
-				$(this).closest('[data-toggle="thumbnail"]').html(`<iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/${$(this).closest('[data-toggle="thumbnail"]').attr("data-embed-id")}?autoplay=1&enablejsapi=1&controls=1&autopause=0&muted=1" allow="autoplay" frameborder="0" loading="lazy"></iframe>`)
+				$(this).closest('[data-toggle="thumbnail"]').html(`<iframe class="embed-responsive-item rounded" src="https://www.youtube.com/embed/${$(this).closest('[data-toggle="thumbnail"]').attr("data-embed-id")}?autoplay=1&enablejsapi=1&controls=1&autopause=0&muted=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen frameborder="0" loading="lazy"></iframe>`)
 			});
 		});
 	</script>

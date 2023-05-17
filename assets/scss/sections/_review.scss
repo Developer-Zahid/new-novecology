@@ -2,4 +2,12 @@
     &__title{
         font-size: toRem(28);
     }
+
+    &__card{
+        background-color: $color-primary;
+
+        .play-icon{
+            font-size: toRem(60);
+        }
+    }
 }
