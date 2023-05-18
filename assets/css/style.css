@@ -294,7 +294,7 @@ p {
 }
 
 /* Common Transition Style */
-.blog__card, .footer__copyright__link, .header .navbar-toggler, .btn-gradient,
+.step__content__card__content__title, .step__content__card__count, .blog__card, .footer__copyright__link, .header .navbar-toggler, .btn-gradient,
 .btn-text,
 .btn-fat, .slick__arrows, .slick-dots li button {
   -webkit-transition: all ease-in-out 0.25s;
@@ -303,7 +303,7 @@ p {
   transition: all ease-in-out 0.25s;
 }
 
-.blog__card__figure__image, .support__figure__image, .wavy__figure__shape {
+.step__video__card__image, .blog__card__figure__image, .support__figure__image, .wavy__figure__shape {
   position: absolute;
   top: 0;
   right: 0;
@@ -1378,6 +1378,147 @@ select {
   font-size: 3.75rem;
 }
 
-.step__content-slide.active {
-  background-color: red;
+.step__video__card__header {
+  background-color: #13438c;
+  position: relative;
+  padding-top: 57%;
+}
+.step__video__card__body {
+  text-align: center;
+  padding: 0.9375rem;
+}
+@media (min-width: 1200px) {
+  .step__video__card__body {
+    display: none;
+  }
+}
+.step__video__card__count {
+  color: #13438c;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.875rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: 3px solid #13438c;
+  border-radius: 50%;
+}
+.step__video__card__title {
+  font-size: 1.25rem;
+  margin-top: 0.9375rem;
+}
+.step__video__card__text {
+  font-size: 0.875rem;
+}
+@media (max-width: 1199.98px) {
+  .step__content-slider {
+    display: none;
+  }
+}
+.step__content-slider:hover {
+  pointer-events: none;
+}
+.step__content-slide {
+  cursor: pointer;
+}
+.step__content-slide:hover {
+  pointer-events: all;
+}
+.step__content-slide.active .step__content__card__count {
+  font-size: 1.875rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  color: #13438c;
+  border-width: 3px;
+  border-color: #13438c;
+}
+.step__content-slide.active .step__content__card__content {
+  color: #000000;
+}
+.step__content-slide.active .step__content__card__content__title {
+  font-size: 1.875rem;
+}
+.step__content-slide.active .step__content__card__content__body {
+  grid-template-rows: 1fr;
+}
+.step__content__card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+     -moz-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.9375rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+@media (min-width: 768px) {
+  .step__content__card {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
+.step__content__card__count, .step__content__card__content {
+  color: #7c7f87;
+}
+.step__content__card__count {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.25rem;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  border: 2px solid #7c7f87;
+  border-radius: 50%;
+}
+.step__content__card__content__title {
+  font-size: 1.25rem;
+  padding-top: 0.3125rem;
+}
+.step__content__card__content__body {
+  display: grid;
+  grid-template-rows: 0fr;
+  -webkit-transition: grid-template-rows 0.3s;
+  -o-transition: grid-template-rows 0.3s;
+  -moz-transition: grid-template-rows 0.3s;
+  transition: grid-template-rows 0.3s;
+  transition: grid-template-rows 0.3s, -ms-grid-rows 0.3s;
+}
+.step__content__card__content__body__collapse {
+  overflow: hidden;
+}
+.step__content__card__content__body__text {
+  font-size: 0.875rem;
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
