@@ -1368,11 +1368,20 @@ select {
   }
 }
 
-.review__title {
-  font-size: 1.75rem;
+.review__image {
+  max-height: 18.75rem;
 }
 .review__card {
+  color: #ffffff;
   background-color: #13438c;
+  text-align: center;
+}
+.review__card__header, .review__card__footer {
+  padding: 10px;
+}
+.review__card__title {
+  font-size: 1.75rem;
+  margin-bottom: 0;
 }
 .review__card .play-icon {
   font-size: 3.75rem;

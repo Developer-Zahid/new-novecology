@@ -1,10 +1,23 @@
 .review{
-    &__title{
-        font-size: toRem(28);
+    &__image{
+        max-height: toRem(300);
     }
 
     &__card{
+        color: $color-white;
         background-color: $color-primary;
+        text-align: center;
+
+        &__header,
+        &__footer
+        {
+            padding: 10px;
+        }
+
+        &__title{
+            font-size: toRem(28);
+            margin-bottom: 0;
+        }
 
         .play-icon{
             font-size: toRem(60);
