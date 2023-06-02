@@ -254,6 +254,60 @@ img {
   --bs-primary-rgb: 19, 67, 140;
 }
 
+.section-bg {
+  background-color: #f9f9f9;
+}
+
+.icon-list {
+  display: inline-block;
+}
+.icon-list__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid #e6e7e9;
+  padding: 10px 0.9375rem;
+}
+.icon-list__item__icon {
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -moz-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 10rem;
+  font-size: 0.875rem;
+  color: #ffffff;
+  background-color: #13438c;
+}
+.icon-list__item__text {
+  font-size: 0.9375rem;
+  color: #13438c;
+  text-align: left;
+}
+
 /* Typography Reset */
 h1, .h1,
 h2, .h2,
@@ -650,7 +704,7 @@ select {
 .header__top__nav .nav-link, .header__top__social-nav .nav-link {
   color: #ffffff;
 }
-.header__top__nav .nav-link.show, .header__top__nav .nav-link:hover, .header__top__nav .nav-link:focus-visible, .header__top__social-nav .nav-link.show, .header__top__social-nav .nav-link:hover, .header__top__social-nav .nav-link:focus-visible {
+.header__top__nav .nav-link.active, .header__top__nav .nav-link.show, .header__top__nav .nav-link:hover, .header__top__nav .nav-link:focus-visible, .header__top__social-nav .nav-link.active, .header__top__social-nav .nav-link.show, .header__top__social-nav .nav-link:hover, .header__top__social-nav .nav-link:focus-visible {
   color: #13438c;
   background-color: #ffffff;
 }

@@ -215,3 +215,38 @@ img{
 .text-primary{
 	--bs-primary-rgb: #{$color-primary-rgb};
 }
+
+.section-bg{
+	background-color: $color-section;
+}
+
+.icon-list{
+	display: inline-block;
+
+	&__item{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		border-bottom: 1px solid lighten($color-gray, $amount: 40);
+		padding: 10px toRem(15);
+
+		&__icon{
+			flex-shrink: 0;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: toRem(30);
+			height: toRem(30);
+			border-radius: 10rem;
+			font-size: toRem(14);
+			color: $color-white;
+			background-color: $color-primary;
+		}
+	
+		&__text{
+			font-size: toRem(15);
+			color: $color-primary;
+			text-align: left;
+		}
+	}
+}

@@ -23,6 +23,7 @@
 		.nav-link{
 			color: $color-white;
 
+			&.active,
 			&.show,
 			&:hover,
 			&:focus-visible
