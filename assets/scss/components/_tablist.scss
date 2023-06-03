@@ -123,3 +123,27 @@
         }
     }
 }
+
+.installations-filter{
+    &__nav{
+        gap: 10px;
+    }
+
+    &__btn{
+        background-color: $color-gray--soft;
+        font-size: toRem(14);
+        font-weight: 500;
+        padding: toRem(10) toRem(20);
+        border: 0;
+        border-radius: 6px;
+
+        &:focus-visible{
+            background-color: darken($color-gray--soft, $amount: 10);
+        }
+
+        &.active{
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+}

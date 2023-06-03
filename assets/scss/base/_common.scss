@@ -250,3 +250,46 @@ img{
 		}
 	}
 }
+
+.section-overlay{
+	position: relative;
+	isolation: isolate;
+
+	&::before{
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 80%;
+		background-color: lighten($color-primary, $amount: 60);
+		z-index: -1;
+	}
+
+	&--top::before{
+		top: 0;
+	}
+}
+
+.arrow-indicator{
+	position: relative;
+	width: 130px;
+	height: 130px;
+
+	@include max-md{
+		display: none;
+	}
+
+	&__image{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+		transform: rotate(-25deg);
+	}
+	
+	&--reverse{
+		.arrow-indicator__image{
+			transform: rotateY(180deg);
+		}
+	}
+}
