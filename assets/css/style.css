@@ -426,6 +426,9 @@ p {
   --bs-btn-active-bg: #5bc4b4;
   --bs-btn-active-border-color: #5bc4b4;
 }
+.btn-primary:focus {
+  color: #ffffff;
+}
 
 .btn-gradient,
 .btn-text,

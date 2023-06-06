@@ -12,6 +12,10 @@
 
 	--bs-btn-active-bg: #{$color-gradient-primary};
 	--bs-btn-active-border-color: #{$color-gradient-primary};
+
+	&:focus{
+		color: $color-white;
+	}
 }
 
 .btn-gradient,

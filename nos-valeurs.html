@@ -51,7 +51,7 @@
 							<a class="nav-link" href="./nous-contacter.html">Nous Contacter</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Prendre RDV</a>
+							<a class="nav-link" href="./prendre-rdv.html">Prendre RDV</a>
 						</li>
 					</ul>
 					<ul class="nav header__top__social-nav">
@@ -469,34 +469,5 @@
 	<script src="./assets/plugins/jquery/jquery-3.6.4.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
-
-	<script src="./assets/plugins/isotope/js/isotope.min.js"></script>
-
-	<script>
-		/* Isotope Init */
-		function isotopeInit() {
-			$(".grid").isotope({
-				itemSelector: ".grid-item",
-				layoutMode: "fitRows",
-				masonry: {
-					isFitWidth: true
-				}
-			});
-
-			// filter items on button click
-			$(".installations-filter__btn").on("click", function () {
-				var filterValue = $(this).attr("data-filter");
-				$(".grid").isotope({ filter: filterValue });
-
-				// Toggle active class on button click
-				$(".installations-filter__btn").removeClass("active");
-				$(this).addClass("active");
-			});
-		}
-
-		$(document).ready(function () {
-			isotopeInit()
-		});
-	</script>
 </body>
 </html>
