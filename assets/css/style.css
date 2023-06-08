@@ -1651,4 +1651,9 @@ select {
 .step__content__card__content__body__text {
   font-size: 0.875rem;
   margin-bottom: 0;
+}
+
+.calendly-header {
+  color: #ffffff;
+  background-color: #08122b;
 }/*# sourceMappingURL=style.css.map */
