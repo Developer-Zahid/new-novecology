@@ -1,0 +1,28 @@
+.sub-banner{
+    position: relative;
+    padding-top: toRem(150);
+    background-color: $color-primary;
+    isolation: isolate;
+
+    &__overlay,
+    &__image
+    {
+        @extend %full-width;
+    }
+    &__overlay{
+        z-index: -1;
+
+        &::after{
+            content: '';
+            @extend %full-width;
+            background-color: rgba($color: #000000, $alpha: 0.3);
+        }
+    }
+    &__image{
+        object-fit: cover;
+    }
+
+    &__title{
+        color: $color-white;
+    }
+}

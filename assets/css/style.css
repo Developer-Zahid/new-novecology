@@ -402,7 +402,7 @@ p {
   transition: all ease-in-out 0.25s;
 }
 
-.step__video__card__image, .blog__card__figure__image, .support__figure__image, .wavy__figure__shape {
+.step__video__card__image, .blog__card__figure__image, .support__figure__image, .sub-banner__overlay::after, .sub-banner__overlay, .sub-banner__image, .wavy__figure__shape {
   position: absolute;
   top: 0;
   right: 0;
@@ -815,7 +815,7 @@ select {
   }
 }
 .header .navbar-brand__image {
-  max-height: 20px;
+  max-height: 40px;
 }
 .header .navbar-toggler {
   font-size: 1rem;
@@ -1075,6 +1075,27 @@ select {
   .banner__bottom__image {
     display: none;
   }
+}
+
+.sub-banner {
+  position: relative;
+  padding-top: 9.375rem;
+  background-color: #13438c;
+  isolation: isolate;
+}
+.sub-banner__overlay {
+  z-index: -1;
+}
+.sub-banner__overlay::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.sub-banner__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.sub-banner__title {
+  color: #ffffff;
 }
 
 .feature__card {
