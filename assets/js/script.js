@@ -30,6 +30,7 @@
 	$('header').before('<div class="header-height-fix"></div>');
     function headerHeightFixer(){
     	$('.header-height-fix').css('height', $('header').innerHeight() +'px');
+    	$('body').css('--header-size', $('header').innerHeight() +'px');
 	};
 
 

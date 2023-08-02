@@ -1,0 +1,25 @@
+.sticky-card{
+    position: sticky;
+    top: var(--header-size);
+    background-color: $color-white;
+    padding: toRem(30);
+    max-width: toRem(300);
+    box-shadow: 5px 5px 20px rgba(25,51,109,.09);
+    border-radius: 8px;
+
+    &__text{
+        font-size: toRem(14);
+        font-weight: 400;
+        line-height: 2;
+        color: $color-primary;
+        margin-top: toRem(15);
+        margin-bottom: toRem(15);
+    }
+}
+
+.icon-card{
+    &__title{
+        margin-top: toRem(20);
+        margin-bottom: toRem(20);
+    }
+}

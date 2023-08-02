@@ -325,6 +325,14 @@ img {
   top: 0;
 }
 
+.bg-light-blue {
+  background-color: #d7e5fa;
+}
+
+.bg-gray-light {
+  background-color: #eaeaea;
+}
+
 .arrow-indicator {
   position: relative;
   width: 130px;
@@ -351,6 +359,14 @@ img {
   -webkit-transform: rotateY(180deg);
      -moz-transform: rotateY(180deg);
           transform: rotateY(180deg);
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.fs-sm {
+  font-size: 0.875rem;
 }
 
 /* Typography Reset */
@@ -499,6 +515,14 @@ p {
   color: #ffffff;
   background-color: #13438c;
 }
+.btn-fat--gray {
+  color: #000000;
+  background-color: #eaeaea;
+}
+.btn-fat--gray:hover, .btn-fat--gray:focus {
+  color: #ffffff;
+  background-color: #13438c;
+}
 
 .btn-bear {
   position: relative;
@@ -573,6 +597,30 @@ input[type=number] {
 
 select {
   cursor: pointer;
+}
+
+.sticky-card {
+  position: sticky;
+  top: var(--header-size);
+  background-color: #ffffff;
+  padding: 1.875rem;
+  max-width: 18.75rem;
+  -webkit-box-shadow: 5px 5px 20px rgba(25, 51, 109, 0.09);
+          box-shadow: 5px 5px 20px rgba(25, 51, 109, 0.09);
+  border-radius: 8px;
+}
+.sticky-card__text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2;
+  color: #13438c;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+
+.icon-card__title {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .tablist--service {

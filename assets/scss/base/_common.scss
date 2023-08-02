@@ -270,6 +270,13 @@ img{
 	}
 }
 
+.bg-light-blue{
+	background-color: lighten($color-primary, $amount: 60);
+}
+.bg-gray-light{
+	background-color: $color-gray--soft;
+}
+
 .arrow-indicator{
 	position: relative;
 	width: 130px;
@@ -292,4 +299,12 @@ img{
 			transform: rotateY(180deg);
 		}
 	}
+}
+
+.text-underline{
+	text-decoration: underline;
+}
+
+.fs-sm{
+	font-size: toRem(14);
 }
