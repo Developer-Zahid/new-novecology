@@ -8,7 +8,7 @@
     <meta name="description" content="Novecology website">
     <meta name="keywords" content="Novecology, novecology">
 	<!-- Site Title -->
-	<title>Nos références</title>
+	<title>Estimer vos aides</title>
 	<!-- Favicon Link -->
 	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
@@ -20,6 +20,13 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/css/style.min.css">
+
+	<link rel="stylesheet" href="./assets/css/chatbot.min.css">
+    <style>
+        .chat__card--agent .chat__message::before{
+            background-image: url('https://novecology.fr/frontend_assets/images/women-user.png');
+        }
+    </style>
 </head>
 <body>
 	<!-- Header Section -->
@@ -32,7 +39,7 @@
 					</span>
 					<ul class="nav header__top__nav">
 						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle active" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<a class="nav-link dropdown-toggle" href="javascript:void(0)" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 								QUI SOMMES-NOUS ?
 							</a>
 							<ul class="dropdown-menu">
@@ -43,7 +50,7 @@
 									<a class="dropdown-item" href="./nos-valeurs.html">Nos valeurs</a>
 								</li>
 								<li>
-									<a class="dropdown-item active" href="./nos-references.html">Nos références</a>
+									<a class="dropdown-item" href="./nos-references.html">Nos références</a>
 								</li>
 							</ul>
 						</li>
@@ -97,7 +104,7 @@
 							  <a class="nav-link" href="./audit-energetique.html">Audit énergétique</a>
 						</li>
 						<li class="nav-item">
-							  <a class="nav-link" href="./estimer-vos-aides.html">Estimer vos aides</a>
+							  <a class="nav-link active" href="./estimer-vos-aides.html">Estimer vos aides</a>
 						</li>
 					</ul>
 				</div>
@@ -105,168 +112,50 @@
 		</div>
 	</header>
 
-	<!-- References Section -->
-	<section class="section-gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="section-header text-start">
-						<h1 class="section-header__title">Nos références</h1>
+	<div class="chat pt-3">
+        <div class="chat__body">
+            <div class="chat__card chat__card--agent">
+                <div class="chat__message-wrapper" style="--index: 0">
+                    <div class="chat__message">
+						<p>Bonjour et bienvenue sur Novecology.fr !</p>
+						<p>Je suis <strong>Jade</strong>, votre assistante virtuelle.</p>
+						<p class="mb-0">Je suis là pour vous aider à découvrir nos solutions de rénovation énergétique. Nous savons que les travaux de rénovation peuvent être coûteux, c'est pourquoi nous proposons une simulation pour calculer les aides financières auxquelles vous pouvez prétendre.</p>
 					</div>
-					<p>Depuis plus de 12 ans, nous avons accompagné des milliers de clients dans leurs projets de rénovation énergétique. Nous avons su leur donner satisfaction en leur proposant des solutions innovantes, performantes et durables.</p>
-				</div>
-				<div class="col-lg-6">
-					<img src="./assets/images/references/references-image.JPG" alt="references" draggable="false" loading="lazy" class="img-fluid">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Installations Section -->
-	<section class="section-gap">
-		<div class="container">
-			<div class="section-header">
-				<h1 class="section-header__title">Nos dernières installations</h1>
-			</div>
-			<div class="installations-filter__nav nav nav justify-content-center">
-				<button type="button" class="installations-filter__btn active" data-filter="*">
-					Tout
-				</button>
-				<button type="button" class="installations-filter__btn" data-filter=".chaudiere_a_granules">
-					Chaudière à granulés
-				</button>
-				<button type="button" class="installations-filter__btn" data-filter=".pompe_a_chaleur_air_eau">
-					Pompe à Chaleur Air/Eau
-				</button>
-				<button type="button" class="installations-filter__btn" data-filter=".pompe_a_chaleur_air_air">
-					Pompe à Chaleur Air/Air
-				</button>
-				<button type="button" class="installations-filter__btn" data-filter=".solaire">
-					Solaire
-				</button>
-				<button type="button" class="installations-filter__btn" data-filter=".isolation">
-					Isolation
-				</button>
-			</div>
-			<div class="row grid">
-				<div class="grid-item col-md-6 mt-3 mt-md-4 chaudiere_a_granules">
-					<div class="ratio ratio-16x9">
-						<img src="./assets/images/services/service-1/service-image-1.jpg" alt="service" loading="lazy" draggable="false">
-					</div>					  
-				</div>
-				<div class="grid-item col-md-6 mt-3 mt-md-4 pompe_a_chaleur_air_eau">
-					<div class="ratio ratio-16x9">
-						<img src="./assets/images/services/service-1/service-image-2.jpg" alt="service" loading="lazy" draggable="false">
-					</div>					  
-				</div>
-				<div class="grid-item col-md-6 mt-3 mt-md-4 pompe_a_chaleur_air_air">
-					<div class="ratio ratio-16x9">
-						<img src="./assets/images/services/service-1/service-image-3.jpg" alt="service" loading="lazy" draggable="false">
-					</div>					  
-				</div>
-				<div class="grid-item col-md-6 mt-3 mt-md-4 solaire">
-					<div class="ratio ratio-16x9">
-						<img src="./assets/images/services/service-3/service-image-1.jpg" alt="service" loading="lazy" draggable="false">
-					</div>					  
-				</div>
-				<div class="grid-item col-md-6 mt-3 mt-md-4 isolation">
-					<div class="ratio ratio-16x9">
-						<img src="./assets/images/services/service-2/service-image-1.jpg" alt="service" loading="lazy" draggable="false">
-					</div>					  
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Wavy Shape -->
-	<figure class="wavy__figure user-select-none">
-		<svg class="wavy__figure__shape" fill="currentColor" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 54 1024 162" preserveAspectRatio="none">
-			<path d="M0 216.312h1024v-3.044c-50.8-17.1-108.7-30.7-172.7-37.9-178.6-19.8-220 36.8-404.9 21.3-206.6-17.2-228-126.5-434.5-141.6-3.9-.3-7.9-.5-11.9-.7v161.944z"></path>
-		</svg>
-	</figure>
-
-	<!-- Footer Contact Section -->
-	<section class="footer-contact section-gap">
-		<div class="container">
-			<div class="row flex-lg-row-reverse align-items-end">
-				<div class="col-lg-4 footer-contact__shape text-center position-relative mb-5 mb-lg-0">
-					<img src="./assets/images/icon/bear-image.png" alt="bear" height="300" draggable="false" loading="lazy" class="footer-contact__shape__image user-select-none">
-					<a href="/" class="d-inline-block">
-						<img src="./assets/images/logo/logo-main.png" alt="logo" draggable="false" loading="lazy" class="img-fluid">
-					</a>
-					<strong class="strong text-primary">La rénovation énergétique pour tous</strong>
-				</div>
-				<div class="col-lg-8">
-					<div class="schedule-form">
-						<div class="container-fluid">
-							<h1 class="schedule-form__title schedule-form__title--lg">Service de rappel gratuit</h1>
-							<h2 class="schedule-form__title mb-3">Appelez-nous au <a href="tel:+0972102972" class="link-highlight">09 72 10 29 72</a> ou remplissez le formulaire de contact.</h2>
-							<form action="javascript:void(0)">
-								<div class="row">
-									<div class="col-lg-4 col-md-6">
-										<div class="mb-3">
-											<input type="text" class="form-control" placeholder="Nom et prénom *" required>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6">
-										<div class="mb-3">
-											<input type="number" class="form-control" placeholder="Téléphone *" required>
-										</div>
-									</div>
-									<div class="col-lg-4">
-										<div class="mb-3">
-											<input type="email" class="form-control" placeholder="Email *" required>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6">
-										<div class="mb-3">
-											<select class="form-control" name="travaux">
-												<option value="" disabled selected>Type de travaux *</option>
-												<option value="1">Chaudières à granulés</option>
-												<option value="2">Pompes à chaleur air/eau</option>
-												<option value="3">Système Solaire Combiné</option>
-												<option value="4">Ballon Thermodynamique</option>
-												<option value="5">Chauffe-eau solaire</option>
-												<option value="6">Pompes à chaleur air/air</option>
-												<option value="7">Rénovation globale d'une maison individuelle</option>
-												<option value="8">VMC Double Flux</option>
-												<option value="9">VMC SIMPLE Flux</option>
-												<option value="10">Poêles à granulés</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-4 col-md-6">
-										<div class="mb-3">
-											<select class="form-control" name="department">
-												<option value="" disabled selected>Département *</option>
-												<option value="01 - Ain - Bourg-en-Bresse">01 - Ain - Bourg-en-Bresse</option>
-												<option value="02 - Aisne - Laon">02 - Aisne - Laon</option>
-												<option value="03 - Allier - Moulins">03 - Allier - Moulins</option>
-												<option value="04 - Alpes-de-Haute-Provence - Digne-les-bains">04 - Alpes-de-Haute-Provence - Digne-les-bains</option>
-												<option value="05 - Hautes-alpes - Gap">05 - Hautes-alpes - Gap</option>
-												<option value="06 - Alpes-maritimes - Nice">06 - Alpes-maritimes - Nice</option>
-												<option value="07 - Ardèche - Privas">07 - Ardèche - Privas</option>
-												<option value="08 - Ardennes - Charleville-Mézières">08 - Ardennes - Charleville-Mézières</option>
-												<option value="09 - Ariège - Foix">09 - Ariège - Foix</option>
-												<option value="10 - Aube - Troyes">10 - Aube - Troyes</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-lg-4">
-										<div class="mb-3">
-											<button type="submit" class="btn w-100 btn-primary text-uppercase">
-												<small>Valider</small>
-											</button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
+                </div>
+                <div class="chat__message-wrapper" style="--index: 1">
+                    <div class="chat__message">
+						<p>Chez <strong>NOVECOLOGY</strong>, nous sommes spécialisés dans les travaux de rénovation énergétique pour aider les particuliers à réduire leur consommation d'énergie et leurs factures tout en préservant l'environnement.</p>
+						<p class="mb-0">Nous sommes là pour vous aider à comprendre les différentes aides auxquelles vous avez droit et vous accompagner dans votre projet.</p>
 					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+                </div>
+                <div class="chat__message-wrapper" style="--index: 2">
+                    <div class="chat__message">
+						<p>Pour mieux vous aider,</p>
+						<div class="chat__message__alert chat__message__alert--sky mb-2">Estimer mes aides pour rénover mon logement</div>
+						<div class="chat__message__alert chat__message__alert--sky">Découvrir un produits en particulier</div>
+					</div>
+                </div>
+                <div class="chat__message-wrapper" style="--index: 3">
+                    <div class="chat__message">
+						<p>Pour mieux vous aider,</p>
+						<div class="chat__message__alert chat__message__alert--success">Découvrir un produits en particulier</div>
+					</div>
+                </div>
+                <div class="chat__message-wrapper" style="--index: 4">
+                    <div class="chat__message">
+						<p>Pour mieux vous aider à calculer les aides auxquelles vous avez droit dans le cadre de votre projet de rénovation énergétique, je vais vous poser quelques questions pour déterminer votre éligibilité.</p>
+						<p>Nous allons effectuer des simulations pour déterminer si vous êtes éligible à MaPrimeRénov' et pour vous informer sur les montants auxquels vous pouvez prétendre. MaPrimeRénov' est une aide financière proposée par l'État pour aider les propriétaires à financer leurs travaux de rénovation énergétique. C'est une excellente opportunité pour vous aider à réaliser votre projet de rénovation tout en réduisant vos coûts.</p>
+						<p>Plus les informations sur votre situation seront précises, plus je serai en mesure de vous orienter vers les aides les plus adaptées à vos besoins.</p>
+						<p>Alors, n'hésitez pas à répondre aux questions pour obtenir une simulation précise et personnalisée de vos aides</p>
+						<strong>C’est parti</strong>
+					</div>
+                </div>
+                <div class="chat__message-wrapper" style="--index: 5">
+                    <div class="chat__message">Votre logement se trouve t - il en Ile-De-France ?</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 	<!-- Footer Section -->
 	<footer class="footer">
@@ -422,34 +311,5 @@
 	<script src="./assets/plugins/jquery/jquery-3.6.4.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
-
-	<script src="./assets/plugins/isotope/js/isotope.min.js"></script>
-
-	<script>
-		/* Isotope Init */
-		function isotopeInit() {
-			$(".grid").isotope({
-				itemSelector: ".grid-item",
-				layoutMode: "fitRows",
-				masonry: {
-					isFitWidth: true
-				}
-			});
-
-			// filter items on button click
-			$(".installations-filter__btn").on("click", function () {
-				var filterValue = $(this).attr("data-filter");
-				$(".grid").isotope({ filter: filterValue });
-
-				// Toggle active class on button click
-				$(".installations-filter__btn").removeClass("active");
-				$(this).addClass("active");
-			});
-		}
-
-		$(document).ready(function () {
-			isotopeInit()
-		});
-	</script>
 </body>
 </html>

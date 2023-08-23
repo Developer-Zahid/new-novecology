@@ -1131,6 +1131,10 @@ select {
   background-color: #13438c;
   isolation: isolate;
 }
+.sub-banner--reversed {
+  padding-top: 0;
+  padding-bottom: 12.5rem;
+}
 .sub-banner__overlay {
   z-index: -1;
 }
@@ -1141,6 +1145,12 @@ select {
 .sub-banner__image {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.sub-banner__wrapper {
+  background-color: #ffffff;
+  padding: 1.875rem;
+  border-bottom-left-radius: 1.25rem;
+  border-bottom-right-radius: 1.25rem;
 }
 .sub-banner__title {
   color: #ffffff;

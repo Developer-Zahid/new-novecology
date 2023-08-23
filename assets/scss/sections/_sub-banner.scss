@@ -4,6 +4,11 @@
     background-color: $color-primary;
     isolation: isolate;
 
+    &--reversed{
+        padding-top: 0;
+        padding-bottom: toRem(200);
+    }
+
     &__overlay,
     &__image
     {
@@ -20,6 +25,13 @@
     }
     &__image{
         object-fit: cover;
+    }
+
+    &__wrapper{
+        background-color: $color-white;
+        padding: toRem(30);
+        border-bottom-left-radius: toRem(20);
+        border-bottom-right-radius: toRem(20);
     }
 
     &__title{
