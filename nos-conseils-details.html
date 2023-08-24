@@ -8,7 +8,7 @@
     <meta name="description" content="Novecology website">
     <meta name="keywords" content="Novecology, novecology">
 	<!-- Site Title -->
-	<title>Nos Conseils</title>
+	<title>Nos Conseils Details</title>
 	<!-- Favicon Link -->
 	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
 	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
@@ -19,6 +19,7 @@
 	<!-- All CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/slick-slider/css/slick.min.css">
 	<link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 <body>
@@ -105,105 +106,130 @@
 		</div>
 	</header>
 
-	<!-- Blog Section -->
-	<section class="blog section-gap">
+	<!-- Banner Section -->
+	<section class="sub-banner sub-banner--empty">
+		<div class="sub-banner__overlay">
+			<img src="./assets/images/audit/audit-energetique.webp" alt="audit-energetique" loading="lazy" class="sub-banner__image">
+		</div>
+	</section>
+
+	<!-- Blog Details Section -->
+	<section class="section-gap">
 		<div class="container">
-			<div class="section-header">
-				<h1 class="section-header__title">Toutes les nouveautés des aides à la rénovation</h1>
-				<p class="section-header__text">Découvrez toutes les actus sur les aides à la rénovation énergétique.</p>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-xxl-10">
-					<div class="row">
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #e5f5ff;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-1.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
+			<div class="row">
+				<div class="col-lg-8 mb-3 mb-lg-0">
+					<main class="blog-details rounded">
+						<div class="d-flex align-items-center justify-content-between">
+							<a href="#!" class="text-primary text-uppercase fw-bold">ACTUALITÉS</a>
+							<span>.2min</span>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #feecec;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-2.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
+						<h1 class="blog-details__title">La prime à l'autoconsommation augmentée pour le T1 de 2023</h1>
+						<div class="py-4">
+							<p class="mb-1">Par Sarah N</p>
+							<p class="text-muted mb-0">Publié le 03/03/2023</p>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #fceedb;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-3.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
+						<div class="editor-content">
+							<p><em>Une hausse du montant de la prime à l'autoconsommation solaire a été actée le 28 février 2023 par la Commission de Régulation de l'Energie (CRE). Cette augmentation est assortie d'une modification du versement de la prime. Autrefois versée sur 5 ans, elle fait désormais l'objet d'un paiement en une seule fois. Un moyen d'inciter les particuliers à s'équiper de panneaux solaires. TUCOENERGIE vous explique tout ça en détail.</em></p>
+							<h3>Hausse du montant de la prime à l'autoconsommation : quel est le nouveau barème ?</h3>
+							<br>
+							<p>La <a href="#!">prime à l'autoconsommation</a> est une aide destinée aux consommateurs particuliers et professionnels qui décident d'installer des panneaux solaires photovoltaïques en toiture. Mise en place par l'Etat, cette prime permet de minimiser les frais de l'acquisition et de la pose des modules solaires. Son montant est établi selon un barème dégressif qui dépend de la puissance de l'installation en kilowatt-crête (kWc). Révisés par les pouvoirs publics, les nouveaux montants ont été publiés par la CRE à la fin du mois de février, avec <a href="#!">l'arrêté du 8 février 2023</a> Le gendarme de l'énergie précise le montant de la prime:</p>
+							<ul>
+								<li>du 1er février 2023 au 30 avril 2023 (1er trimestre 2023);</li>
+								<li>du 1er novembre 2022 au 31 janvier 2023 (4 trimestre 2022).</li>
+							</ul>
+							<h4 class="mb-0">Prime à l'investissement : le barème pour le T1 2023</h4>
 						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #f3faec;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-4.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #e5f5ff;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-1.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #feecec;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-2.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #fceedb;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-3.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
-						</div>
-						<div class="col-xl-3 col-lg-4 col-md-6 px-2">
-							<article class="blog__card" style="background-color: #f3faec;">
-								<div class="blog__card__body text-center">
-									<p class="blog__card__text">Comment réduire l'humidité dans une maison ?</p>
-									<a href="./nos-conseils-details.html" class="btn-text stretched-link">En savoir plus</a>
-								</div>
-								<figure class="blog__card__figure mb-0">
-									<img src="./assets/images/blogs/blog-image-4.svg" alt="blog" draggable="false" loading="lazy" class="blog__card__figure__image">
-								</figure>
-							</article>
+					</main>
+				</div>
+				<aside class="col-lg-4">
+					<div class="follow-card mb-5">
+						<p class="mb-0 fw-bold">Suivez-nous</p>
+						<p class="mb-0">sur nos réseaux sociaux</p>
+						<div class="nav follow-card__social-nav">
+							<a class="nav-link" href="https://www.facebook.com/NOVECOLOGY" target="_blank">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a class="nav-link" href="https://www.instagram.com/novecology/" target="_blank">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a class="nav-link" href="https://www.youtube.com/@novecology1609" target="_blank">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
 						</div>
 					</div>
+					<div class="sticky-card text-center">
+						<a href="/" class="d-inline-block">
+							<img src="./assets/images/logo/logo.png" alt="logo"  loading="lazy" draggable="false">
+						</a>
+						<p class="sticky-card__text">Bénéficiez d’une <span class="text-underline">étude gratuite</span> pour réaliser des <strong>économies sur votre facture énergétique</strong></p>
+						<a href="#!" class="btn-fat btn-fat--gray btn-bear">
+							Prendre <br> rendez-vous
+							<img src="./assets/images/icon/bear-image.png" alt="bear" class="btn-bear__image user-select-none" height="64" loading="lazy" draggable="false">
+						</a>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</section>
+
+	<!-- News Section -->
+	<section class="news section-gap">
+		<div class="container">
+			<div class="section-header text-start">
+				<h1 class="section-header__title">Articles similaires</h1>
+			</div>
+			<div class="blog__slider row">
+				<div class="blog__slide col-lg-4">
+					<a href="#!" class="news-card d-block mx-2">
+						<div class="d-flex align-items-center justify-content-between">
+							<span class="fw-bold text-primary">ACTUALITÉS</span>
+							<small class="text-muted">.3min</small>
+						</div>
+						<figure class="news-card__figure position-relative">
+							<img class="news-card__figure__image" src="./assets/images/valeurs/valeurs-image-1.jpg" alt="news">
+						</figure>
+						<h4 class="news-card__title">Calculer la consommation d'une pompe à chaleur Air/Eau de 11 kW</h4>
+						<small class="text-muted mb-0">24/07/2023</small>
+					</a>
+				</div>
+				<div class="blog__slide col-lg-4">
+					<a href="#!" class="news-card d-block mx-2">
+						<div class="d-flex align-items-center justify-content-between">
+							<span class="fw-bold text-primary">ACTUALITÉS</span>
+							<small class="text-muted">.3min</small>
+						</div>
+						<figure class="news-card__figure position-relative">
+							<img class="news-card__figure__image" src="./assets/images/valeurs/valeurs-image-2.jpg" alt="news">
+						</figure>
+						<h4 class="news-card__title">Calculer la consommation d'une pompe à chaleur Air/Eau de 11 kW</h4>
+						<small class="text-muted mb-0">24/07/2023</small>
+					</a>
+				</div>
+				<div class="blog__slide col-lg-4">
+					<a href="#!" class="news-card d-block mx-2">
+						<div class="d-flex align-items-center justify-content-between">
+							<span class="fw-bold text-primary">ACTUALITÉS</span>
+							<small class="text-muted">.3min</small>
+						</div>
+						<figure class="news-card__figure position-relative">
+							<img class="news-card__figure__image" src="./assets/images/valeurs/valeurs-image-3.jpg" alt="news">
+						</figure>
+						<h4 class="news-card__title">Calculer la consommation d'une pompe à chaleur Air/Eau de 11 kW</h4>
+						<small class="text-muted mb-0">24/07/2023</small>
+					</a>
+				</div>
+				<div class="blog__slide col-lg-4">
+					<a href="#!" class="news-card d-block mx-2">
+						<div class="d-flex align-items-center justify-content-between">
+							<span class="fw-bold text-primary">ACTUALITÉS</span>
+							<small class="text-muted">.3min</small>
+						</div>
+						<figure class="news-card__figure position-relative">
+							<img class="news-card__figure__image" src="./assets/images/valeurs/valeurs-image-4.jpg" alt="news">
+						</figure>
+						<h4 class="news-card__title">Calculer la consommation d'une pompe à chaleur Air/Eau de 11 kW</h4>
+						<small class="text-muted mb-0">24/07/2023</small>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -316,7 +342,7 @@
 					<div class="footer__block">
 						<ul class="footer__list">
 							<li class="footer__list__item">
-								<a href="./nos-conseils-details.html" class="footer__list__link">QUI SOMMES NOUS ?</a>
+								<a href="#!" class="footer__list__link">QUI SOMMES NOUS ?</a>
 							</li>
 							<li class="footer__list__item">
 								<a href="./nous-contacter.html" class="footer__list__link">NOUS CONTACTER</a>
@@ -453,5 +479,40 @@
 	<script src="./assets/plugins/jquery/jquery-3.6.4.min.js"></script>
 	<script src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="./assets/js/script.js"></script>
+
+	<script src="./assets/plugins/slick-slider/js/slick.min.js"></script>
+	<script>
+		$(document).ready(function (){
+			/*  Blog slider */
+			if($(".blog__slider").length){
+				$(".blog__slider").slick({
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					speed: 600,
+					arrows: true,
+					prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-left"></i></button>',
+					nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fa-solid fa-chevron-right"></i></button>',
+					dots: false,
+					pauseOnHover: false,
+					pauseOnFocus: false,
+					infinite: false,
+					responsive: [
+						{
+							breakpoint: 999,
+							settings: {
+								slidesToShow: 2,
+							}
+						},
+						{
+							breakpoint: 769,
+							settings: {
+								slidesToShow: 1,
+							}
+						},
+					],
+				});
+			};
+		})
+	</script>
 </body>
 </html>

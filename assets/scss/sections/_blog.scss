@@ -1,6 +1,6 @@
 .blog{
-    .slick{
-        &__arrows{
+    &__slider{
+        .slick__arrows{
             bottom: calc((toRem(40) + 10px) * -1);
             color: $color-primary;
             background-color: $color-white;
@@ -10,7 +10,7 @@
             text-align: center;
             border-radius: 50%;
             box-shadow: 0 5px 20px rgba($color-black, $alpha: 0.15);
-
+    
             &--left{
                 right: calc((toRem(40) + 25px));
             }
@@ -18,7 +18,7 @@
                 right: 15px;
                 transform: translateX(0);
             }
-
+    
             &:hover,
             &:focus-visible
             {
@@ -61,6 +61,65 @@
                 border-bottom-left-radius: toRem(15);
                 border-bottom-right-radius: toRem(15);
                 @extend %full-width;
+            }
+        }
+    }
+
+    &-details{
+        position: relative;
+        padding: toRem(20);
+        background-color: $color-white;
+        box-shadow: 5px 5px 20px rgba(25,51,109,.09);
+        margin-top: toRem(-300);
+
+        &__title{
+            @include max-xl{
+                font-size: toRem(30);
+            }
+            @include max-md{
+                font-size: toRem(25);
+            }
+            @include min-xl{
+                font-size: toRem(40);
+            }
+            font-weight: 700;
+        }
+    }
+}
+
+.news{
+    &__slider{
+        .slick__arrows{
+            bottom: 0;
+            right: 0;
+            width: toRem(42);
+            height: toRem(42);
+            border-radius: 50rem;
+            color: $color-primary;
+            background-color: $color-white;
+            box-shadow: .3125rem .3125rem 1.25rem rgba(0,0,0,.12);
+
+            &--left{
+                transform: translateX(calc((100% + toRem(15)) * -1));
+            }
+        }
+    }
+    &-card{
+        &__title{
+            @extend %transition;
+        }
+
+        &__figure{
+            padding-top: 60%;
+    
+            &__image{
+                @extend %full-width;
+            }
+        }
+
+        &:hover{
+            .news-card__title{
+                color: $color-primary;
             }
         }
     }

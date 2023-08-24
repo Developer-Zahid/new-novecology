@@ -308,3 +308,23 @@ img{
 .fs-sm{
 	font-size: toRem(14);
 }
+
+.editor-content{
+	a{
+		color: $color-primary;
+	}
+	p{
+		font-size: toRem(14);
+	}
+}
+
+.follow-card{
+	padding-left: toRem(20);
+	color: #50545f;
+	border-left: 2px solid currentColor;
+
+	.nav-link{
+		font-size: toRem(22);
+		color: inherit;
+	}
+}
